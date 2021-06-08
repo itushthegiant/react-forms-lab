@@ -15,8 +15,7 @@ class TwitterMessage extends React.Component {
     })
   }
 
-
-
+ 
 
 
 
@@ -31,6 +30,9 @@ class TwitterMessage extends React.Component {
         id="message" 
         value={this.state.message}
         />
+        <p>
+          {this.props.maxChars - this.state.message.length}
+        </p>
       </div>
     );
   }
